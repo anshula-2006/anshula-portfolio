@@ -1,28 +1,28 @@
-const avatar = document.getElementById("avatar")
-const speech = document.getElementById("speech")
+const avatar = document.getElementById("avatar");
+const speech = document.getElementById("speech");
 
-avatar.addEventListener("mouseenter", () => {
+if (avatar && speech) {
+  let messageTimer;
 
-speech.textContent="Hello, it's Anshu 👋"
-speech.classList.add("show")
+  avatar.addEventListener("mouseenter", () => {
+    speech.textContent = "Hello, it's Anshu";
+    speech.classList.add("show");
 
-setTimeout(()=>{
-speech.textContent="Click for my resume 😊"
-},1000)
+    clearTimeout(messageTimer);
+    messageTimer = setTimeout(() => {
+      speech.textContent = "Click for my resume";
+    }, 1000);
+  });
 
-})
+  avatar.addEventListener("mouseleave", () => {
+    clearTimeout(messageTimer);
+    speech.classList.remove("show");
+  });
 
-avatar.addEventListener("mouseleave", () => {
-
-speech.classList.remove("show")
-
-})
-
-avatar.addEventListener("click", () => {
-
-const link=document.createElement("a")
-link.href="resume.pdf"
-link.download="Anshu_Resume.pdf"
-link.click()
-
-})
+  avatar.addEventListener("click", () => {
+    const link = document.createElement("a");
+    link.href = "AnshulaAndal_InternshalaResume.pdf";
+    link.download = "AnshulaAndal_InternshalaResume.pdf";
+    link.click();
+  });
+}
