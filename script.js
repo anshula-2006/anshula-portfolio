@@ -45,21 +45,6 @@ if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
-const avatarAnimation = document.getElementById('avatar-animation');
-if (avatarAnimation && window.lottie) {
-  window.lottie.loadAnimation({
-    container: avatarAnimation,
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'avatar.json',
-    rendererSettings: {
-      progressiveLoad: true,
-      preserveAspectRatio: 'xMidYMid meet',
-    },
-  });
-}
-
 const avatar = document.getElementById('avatar');
 const speech = document.getElementById('speech');
 if (avatar && speech) {
