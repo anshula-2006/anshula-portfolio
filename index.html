@@ -1,83 +1,302 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anshu Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshula | Java Backend Developer</title>
+    <meta
+        name="description"
+        content="Portfolio of Anshula Andal, a Computer Science student focused on Java backend development, DSA, Spring Boot, databases, and secure software engineering."
+    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p7f4yk5XFaEIN9ZYZ2L+PIheMck9odQbLk3p8ypsgI3uG7uduXiO4B7D3hRklxyvBDM6CQkdl6Vpm0H+5cmUfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="top">
 <header>
-<h2 class="logo">Anshu</h2>
-<nav>
-<a href="#projects">Projects</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
+    <h2 class="logo">Anshula</h2>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    <nav aria-label="Primary navigation" class="nav">
+        <div class="nav-links" id="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 </header>
-
-<section class="hero">
-<div class="hero-left">
-<img src="photo.png" class="profile" alt="Anshu profile photo">
-<h1>Hi, I'm <span>Anshu</span></h1>
-<p>Computer Science student building web apps and AI tools.</p>
-<div class="hero-actions">
-<a class="btn btn-primary" href="#projects">View Projects</a>
-<a class="btn btn-secondary" href="AnshulaAndal_InternshalaResume.pdf" download>Download Resume</a>
-</div>
-</div>
-
-<div class="hero-right avatar-container">
-<lottie-player
-id="avatar"
-src="avatar.json"
-background="transparent"
-speed="1"
-style="width:260px;height:260px"
-loop
-autoplay>
-</lottie-player>
-<div id="speech" class="speech"></div>
-</div>
-</section>
-
-<section id="projects">
-<h2>Projects</h2>
-<div class="projects-grid">
-<div class="project-card">
-<h3>AI Quiz Generator</h3>
-<p>AI powered quiz generation using OpenAI API.</p>
-<a href="projects/quiz.html">Read Case Study -></a>
-</div>
-
-<div class="project-card">
-<h3>VitaMind</h3>
-<p>Mental wellness web application with FastAPI.</p>
-<a href="projects/vitamind.html">Read Case Study -></a>
-</div>
-
-<div class="project-card">
-<h3>Shopify Profit Tracker</h3>
-<p>Tool to calculate Shopify profits dynamically.</p>
-<a href="projects/shopify.html">Read Case Study -></a>
-</div>
-</div>
-</section>
-
-<section id="about">
-<h2>About</h2>
-<p>
-Computer Science student at KMIT building full stack web apps
-and experimenting with AI based tools.
-</p>
-</section>
-
-<section id="contact">
-<h2>Contact</h2>
-<p>Email: <a href="mailto:anshulaandal@gmail.com">anshulaandal@gmail.com</a></p>
-</section>
-
+<main>
+    <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-left">
+            <p class="hero-intro">Hi, I'm Anshula</p>
+            <h1 id="hero-heading">Turning ideas into backend systems.</h1>
+            <p class="hero-tags">Java • Spring Boot • SQL • DSA • Security</p>
+            <p class="hero-description">
+                Computer Science student at KMIT building practical software,
+                strengthening problem-solving skills, and preparing for backend
+                engineering internships.
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="#projects">View Projects</a>
+                <a class="btn btn-secondary" href="AnshulaAndal_InternshalaResume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+                <a class="btn btn-link" href="https://github.com/anshula-2006" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+            <div class="cta-badge" aria-hidden="true">Open to Backend Internship Opportunities</div>
+        </div>
+        <div class="hero-right">
+            <div class="avatar-card" id="avatar">
+                <img src="photo.png" class="profile" alt="Professional portrait of Anshula Andal">
+                <span id="speech" class="speech" aria-hidden="true"></span>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section-label">ABOUT</p>
+        <h2>How I work</h2>
+        <div class="about-content">
+            <p>
+                I like understanding how software works beneath the interface—from APIs
+                and databases to algorithms, authentication, and application security.
+            </p>
+            <p>
+                My current focus is Java backend development, DSA, Spring Boot,
+                databases, and secure API design. I learn by building features,
+                breaking problems down, and improving projects continuously.
+            </p>
+        </div>
+        <div class="about-highlights">
+            <span>Hyderabad</span>
+            <span>B.Tech CSE @ KMIT</span>
+            <span>Java Backend</span>
+            <span>DSA</span>
+            <span>Security</span>
+        </div>
+    </section>
+    <section id="skills">
+        <p class="section-label">SKILLS</p>
+        <h2>Technologies and foundations</h2>
+        <p class="skills-lead">
+            I enjoy building backend applications with Java and Node.js while strengthening my computer science fundamentals through DSA, databases, and system design.
+        </p>
+        <div class="skills-grid">
+            <article class="skill-card lang-card">
+                <h3><i class="fa-solid fa-code"></i> Languages</h3>
+                <div class="skill-list">
+                    <span class="lang-badge">Java</span>
+                    <span class="lang-badge">Python</span>
+                    <span class="lang-badge">JavaScript</span>
+                    <span class="lang-badge">SQL</span>
+                </div>
+            </article>
+            <article class="skill-card backend-card">
+                <h3><i class="fa-solid fa-server"></i> Backend Development</h3>
+                <div class="skill-list">
+                    <span class="backend-badge">Spring Boot (Learning)</span>
+                    <span class="backend-badge">Node.js</span>
+                    <span class="backend-badge">Express.js</span>
+                    <span class="backend-badge">REST APIs</span>
+                    <span class="backend-badge">JWT Authentication</span>
+                </div>
+            </article>
+            <article class="skill-card db-card">
+                <h3><i class="fa-solid fa-database"></i> Databases</h3>
+                <div class="skill-list">
+                    <span class="db-badge">PostgreSQL</span>
+                    <span class="db-badge">MongoDB</span>
+                    <span class="db-badge">MySQL</span>
+                </div>
+            </article>
+            <article class="skill-card tools-card">
+                <h3><i class="fa-solid fa-screwdriver-wrench"></i> Developer Tools</h3>
+                <div class="skill-list">
+                    <span class="tools-badge">Git</span>
+                    <span class="tools-badge">GitHub</span>
+                    <span class="tools-badge">Postman</span>
+                    <span class="tools-badge">VS Code</span>
+                </div>
+            </article>
+            <article class="skill-card cs-card">
+                <h3><i class="fa-solid fa-brain"></i> Computer Science</h3>
+                <div class="skill-list">
+                    <span class="cs-badge">Data Structures & Algorithms</span>
+                    <span class="cs-badge">DBMS</span>
+                    <span class="cs-badge">Operating Systems</span>
+                    <span class="cs-badge">Computer Networks</span>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section-label">PROJECTS</p>
+        <h2>Featured work</h2>
+        <div class="projects-grid">
+            <article class="project-card">
+                <div>
+                    <div class="project-top">
+                        <span class="project-badge">AI • Analytics</span>
+                        <span class="project-status live">Live</span>
+                    </div>
+                    <h3>Conversational AI BI Dashboard</h3>
+                    <p class="project-description">
+                        A business intelligence application that converts natural-language
+                        questions into SQL-backed dashboards, KPI cards, and interactive charts.
+                    </p>
+                </div>
+                <div>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>SQLite</span>
+                        <span>Plotly</span>
+                        <span>Groq</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/anshula-2006/conversational-ai-bi-dashboard" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://ai-bi-dashboard.streamlit.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div>
+                    <div class="project-top">
+                        <span class="project-badge">AI • Education</span>
+                        <span class="project-status prototype">Prototype</span>
+                    </div>
+                    <h3>Quizzy</h3>
+                    <p class="project-description">
+                        An AI-powered learning platform that transforms PDFs and text into
+                        quizzes, flashcards, analytics, and interactive practice sessions.
+                    </p>
+                </div>
+                <div>
+                    <div class="tech-stack">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                        <span>JWT</span>
+                        <span>Groq</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/anshula-2006/quizzy" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div>
+                    <div class="project-top">
+                        <span class="project-badge">Finance • Dashboard</span>
+                        <span class="project-status prototype">Prototype</span>
+                    </div>
+                    <h3>Shopify Profit Tracker</h3>
+                    <p class="project-description">
+                        A profit and expense tracking dashboard for store owners to monitor
+                        revenue, costs, margins, and overall business performance.
+                    </p>
+                </div>
+                <div>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Vite</span>
+                        <span>Tailwind CSS</span>
+                        <span>LocalStorage</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/anshula-2006/shopify-profit-tracker" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div>
+                    <div class="project-top">
+                        <span class="project-badge">Java • Backend</span>
+                        <span class="project-status progress">In Development</span>
+                    </div>
+                    <h3>Commerce Intelligence Platform</h3>
+                    <p class="project-description">
+                        A secure commerce analytics platform combining profit tracking,
+                        AI-powered business insights, and backend APIs for marketing teams.
+                    </p>
+                </div>
+                <div>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>PostgreSQL</span>
+                        <span>JWT</span>
+                        <span>Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="coming-soon">Coming Soon</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="journey">
+        <p class="section-label">CURRENTLY</p>
+        <h2>What I'm working on</h2>
+        <div class="journey-grid">
+            <article class="journey-card">
+                <div class="journey-top">
+                    <span class="journey-icon">🧠</span>
+                    <span class="journey-tag">Currently Learning</span>
+                </div>
+                <h3>DSA</h3>
+                <p>
+                    Solving LeetCode problems and learning patterns across arrays,
+                    hashing, binary search, trees, graphs, and dynamic programming.
+                </p>
+            </article>
+            <article class="journey-card">
+                <div class="journey-top">
+                    <span class="journey-icon">☕</span>
+                    <span class="journey-tag">Currently Learning</span>
+                </div>
+                <h3>Java Backend</h3>
+                <p>
+                    Strengthening Java fundamentals and moving into Spring Boot,
+                    REST APIs, databases, and backend architecture.
+                </p>
+            </article>
+            <article class="journey-card">
+                <div class="journey-top">
+                    <span class="journey-icon">🔒</span>
+                    <span class="journey-tag">Currently Learning</span>
+                </div>
+                <h3>Security</h3>
+                <p>
+                    Learning authentication, secure password storage, JWT security,
+                    input validation, and OWASP fundamentals.
+                </p>
+            </article>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section-label">CONTACT</p>
+        <h2>Let's connect</h2>
+        <div class="contact-card">
+            <p class="contact-lead">
+                I'm currently preparing for backend engineering internships and open
+                to learning opportunities, collaborations, and technical communities.
+            </p>
+            <div class="contact-buttons">
+                <a class="contact-btn" href="mailto:anshulaandal@gmail.com">Email</a>
+                <a class="contact-btn" href="https://github.com/anshula-2006" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="contact-btn" href="https://www.linkedin.com/in/anshula-addanki-b73ab537a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a class="contact-btn" href="https://leetcode.com/u/Anshula_A/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer-inner">
+        <p>Built by Anshula Andal. <span id="current-year"></span></p>
+        <div class="footer-links">
+            <a href="https://github.com/anshula-2006" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/anshula-addanki-b73ab537a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="#top" class="back-to-top">Back to top</a>
+        </div>
+    </div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
