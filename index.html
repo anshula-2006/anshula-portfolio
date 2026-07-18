@@ -8,13 +8,16 @@
         name="description"
         content="Portfolio of Anshula Andal, a Computer Science student seeking Java backend internships. Focused on building backend applications, REST APIs, and scalable software with Java, Spring Boot, and databases."
     >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p7f4yk5XFaEIN9ZYZ2L+PIheMck9odQbLk3p8ypsgI3uG7uduXiO4B7D3hRklxyvBDM6CQkdl6Vpm0H+5cmUfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
 <header>
     <h2 class="logo">Anshula</h2>
-    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="nav-links" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i><span>Menu</span></button>
     <nav aria-label="Primary navigation" class="nav">
         <div class="nav-links" id="nav-links">
             <a href="#about">About</a>
@@ -38,12 +41,11 @@
                 <a class="btn btn-secondary" href="AnshulaAndal_InternshalaResume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
                 <a class="btn btn-link" href="https://github.com/anshula-2006" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
-            <div class="cta-badge" aria-hidden="true">Open to Backend Internship Opportunities</div>
+            <div class="cta-badge"><span aria-hidden="true"></span>Open to Backend Internship Opportunities</div>
         </div>
         <div class="hero-right">
             <div class="avatar-card" id="avatar">
                 <img src="photo.png" class="profile" alt="Professional portrait of Anshula Andal">
-                <span id="speech" class="speech" aria-hidden="true"></span>
             </div>
         </div>
     </section>
@@ -63,7 +65,6 @@
             <span>B.Tech CSE @ KMIT</span>
             <span>Java Backend</span>
             <span>DSA</span>
-            <span>Security</span>
         </div>
     </section>
     <section id="skills">
@@ -74,7 +75,7 @@
         </p>
         <div class="skills-grid">
             <article class="skill-card lang-card">
-                <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+                <h3><i class="fa-solid fa-code" aria-hidden="true"></i> Languages</h3>
                 <div class="skill-list">
                     <span class="lang-badge">Java</span>
                     <span class="lang-badge">Python</span>
@@ -83,17 +84,17 @@
                 </div>
             </article>
             <article class="skill-card backend-card">
-                <h3><i class="fa-solid fa-server"></i> Backend Development</h3>
+                <h3><i class="fa-solid fa-server" aria-hidden="true"></i> Backend Development</h3>
                 <div class="skill-list">
                     <span class="backend-badge">Node.js</span>
                     <span class="backend-badge">Express.js</span>
                     <span class="backend-badge">REST APIs</span>
                     <span class="backend-badge">JWT Authentication</span>
-                    <span class="backend-badge">Spring Boot (Learning)</span>
+                    <span class="backend-badge skill-with-status">Spring Boot <small>Learning</small></span>
                 </div>
             </article>
             <article class="skill-card db-card">
-                <h3><i class="fa-solid fa-database"></i> Databases</h3>
+                <h3><i class="fa-solid fa-database" aria-hidden="true"></i> Databases</h3>
                 <div class="skill-list">
                     <span class="db-badge">PostgreSQL</span>
                     <span class="db-badge">MongoDB</span>
@@ -101,7 +102,7 @@
                 </div>
             </article>
             <article class="skill-card tools-card">
-                <h3><i class="fa-solid fa-screwdriver-wrench"></i> Developer Tools</h3>
+                <h3><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> Developer Tools</h3>
                 <div class="skill-list">
                     <span class="tools-badge">Git</span>
                     <span class="tools-badge">GitHub</span>
@@ -110,7 +111,7 @@
                 </div>
             </article>
             <article class="skill-card cs-card">
-                <h3><i class="fa-solid fa-brain"></i> Computer Science</h3>
+                <h3><i class="fa-solid fa-brain" aria-hidden="true"></i> Core CS</h3>
                 <div class="skill-list">
                     <span class="cs-badge">Data Structures & Algorithms</span>
                     <span class="cs-badge">DBMS</span>
@@ -124,6 +125,60 @@
         <p class="section-label">PROJECTS</p>
         <h2>Featured work</h2>
         <div class="projects-grid">
+            <article class="project-card">
+                <div>
+                    <div class="project-top">
+                        <span class="project-badge">Java • Cybersecurity</span>
+                        <span class="project-status progress">In Development</span>
+                    </div>
+                    <span class="project-type personal">Personal Project</span>
+                    <h3>Sentinel</h3>
+                    <p class="project-subtitle">Cyber Threat Incident Reporting and Case Management Portal</p>
+                    <p class="project-description">
+                        A secure web portal for reporting and managing cyber incidents such as phishing, malware, ransomware, identity theft, data breaches, and unauthorized access. The system supports evidence uploads, case assignment, investigation tracking, audit logs, notifications, and role-based workflows for users, security analysts, and administrators.
+                    </p>
+                </div>
+                <div>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Spring Security</span>
+                        <span>MySQL</span>
+                        <span>JWT</span>
+                        <span>BCrypt</span>
+                        <span>RBAC</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="coming-soon">Coming Soon</span>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div>
+                    <div class="project-top">
+                        <span class="project-badge">Java • Backend</span>
+                        <span class="project-status progress">In Development</span>
+                    </div>
+                    <span class="project-type academic">Academic Project</span>
+                    <h3>NutriGenAI</h3>
+                    <p class="project-subtitle">Secure Recipe Sharing Platform</p>
+                    <p class="project-description">
+                        A secure recipe-sharing application where users can discover recipes, view step-by-step instructions, upload images, search by category, save favorites, and submit reviews. The backend is being developed with secure authentication, BCrypt password hashing, protected REST APIs, input validation, and role-based administration.
+                    </p>
+                </div>
+                <div>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>MongoDB</span>
+                        <span>JWT</span>
+                        <span>BCrypt</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="coming-soon">Coming Soon</span>
+                    </div>
+                </div>
+            </article>
             <article class="project-card">
                 <div>
                     <div class="project-top">
@@ -173,53 +228,6 @@
                     </div>
                 </div>
             </article>
-            <article class="project-card">
-                <div>
-                    <div class="project-top">
-                        <span class="project-badge">Finance • Dashboard</span>
-                        <span class="project-status prototype">Prototype</span>
-                    </div>
-                    <h3>Shopify Profit Tracker</h3>
-                    <p class="project-description">
-                        A dashboard for store owners to track revenue, costs, and margins. It was built to support business monitoring with a React frontend and local data handling.
-                    </p>
-                </div>
-                <div>
-                    <div class="tech-stack">
-                        <span>React</span>
-                        <span>Vite</span>
-                        <span>Tailwind CSS</span>
-                        <span>LocalStorage</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/anshula-2006/shopify-profit-tracker" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </div>
-                </div>
-            </article>
-            <article class="project-card">
-                <div>
-                    <div class="project-top">
-                        <span class="project-badge">Java • Backend</span>
-                        <span class="project-status progress">In Development</span>
-                    </div>
-                    <h3>Commerce Intelligence Platform</h3>
-                    <p class="project-description">
-                        A commerce analytics platform built for secure reporting and API-driven insights. It is designed with Java, Spring Boot, PostgreSQL, JWT, and Docker for backend services.
-                    </p>
-                </div>
-                <div>
-                    <div class="tech-stack">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>PostgreSQL</span>
-                        <span>JWT</span>
-                        <span>Docker</span>
-                    </div>
-                    <div class="project-links">
-                        <span class="coming-soon">Coming Soon</span>
-                    </div>
-                </div>
-            </article>
         </div>
     </section>
     <section id="journey">
@@ -231,9 +239,9 @@
                     <span class="journey-icon">☕</span>
                     <span class="journey-tag">Current Focus</span>
                 </div>
-                <h3>Java Backend</h3>
+                <h3>Java &amp; Spring Boot</h3>
                 <p>
-                    Building REST APIs and learning Spring Boot while improving backend architecture and API design.
+                    Building REST APIs and learning backend architecture, API design, and Spring Boot.
                 </p>
             </article>
             <article class="journey-card">
@@ -241,9 +249,9 @@
                     <span class="journey-icon">🧠</span>
                     <span class="journey-tag">Current Focus</span>
                 </div>
-                <h3>DSA</h3>
+                <h3>Data Structures &amp; Algorithms</h3>
                 <p>
-                    Practicing problem solving through LeetCode to strengthen algorithmic thinking.
+                    Practicing problem solving through LeetCode and strengthening algorithmic thinking.
                 </p>
             </article>
             <article class="journey-card">
@@ -251,9 +259,9 @@
                     <span class="journey-icon">⚙️</span>
                     <span class="journey-tag">Current Focus</span>
                 </div>
-                <h3>Backend Engineering</h3>
+                <h3>Backend Architecture</h3>
                 <p>
-                    Learning authentication, database optimization, Docker, and scalable software design.
+                    Learning authentication, database optimization, Docker fundamentals, and scalable software design.
                 </p>
             </article>
         </div>
@@ -266,17 +274,17 @@
                 I'm currently looking for backend engineering internship opportunities where I can contribute, learn from experienced developers, and continue building practical software.
             </p>
             <div class="contact-buttons">
-                <a class="contact-btn" href="mailto:anshulaandal@gmail.com">Email</a>
-                <a class="contact-btn" href="https://github.com/anshula-2006" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a class="contact-btn" href="https://www.linkedin.com/in/anshula-addanki-b73ab537a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a class="contact-btn" href="https://leetcode.com/u/Anshula_A/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+                <a class="contact-btn" href="mailto:anshulaandal@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i>Email</a>
+                <a class="contact-btn" href="https://github.com/anshula-2006" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+                <a class="contact-btn" href="https://www.linkedin.com/in/anshula-addanki-b73ab537a/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>LinkedIn</a>
+                <a class="contact-btn" href="https://leetcode.com/u/Anshula_A/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code" aria-hidden="true"></i>LeetCode</a>
             </div>
         </div>
     </section>
 </main>
 <footer>
     <div class="footer-inner">
-        <p>Built with HTML, CSS and JavaScript by Anshula Andal. Always learning. Always building. <span id="current-year"></span></p>
+        <p>&copy; <span id="current-year"></span> Anshula Andal. Built with HTML, CSS and JavaScript.</p>
         <div class="footer-links">
             <a href="https://github.com/anshula-2006" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://www.linkedin.com/in/anshula-addanki-b73ab537a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>

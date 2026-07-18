@@ -4,10 +4,32 @@ const navLinkElements = document.querySelectorAll('.nav-links a');
 const sections = document.querySelectorAll('section[id]');
 
 if (menuToggle && navLinks) {
+  const closeMenu = () => {
+    navLinks.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Open navigation menu');
+  };
+
   menuToggle.addEventListener('click', () => {
     const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
     menuToggle.setAttribute('aria-expanded', String(!expanded));
+    menuToggle.setAttribute('aria-label', expanded ? 'Open navigation menu' : 'Close navigation menu');
     navLinks.classList.toggle('open');
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('header')) closeMenu();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeMenu();
+      menuToggle.focus();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 760) closeMenu();
   });
 }
 
@@ -45,30 +67,8 @@ if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
 
-const avatar = document.getElementById('avatar');
-const speech = document.getElementById('speech');
-if (avatar && speech) {
-  let messageTimer;
-
-  avatar.addEventListener('mouseenter', () => {
-    speech.textContent = "Hello, I'm Anshula";
-    speech.classList.add('show');
-    clearTimeout(messageTimer);
-    messageTimer = setTimeout(() => {
-      speech.textContent = 'Click to open resume';
-    }, 1200);
-  });
-
-  avatar.addEventListener('mouseleave', () => {
-    clearTimeout(messageTimer);
-    speech.classList.remove('show');
-  });
-
-  avatar.addEventListener('click', () => {
-    const link = document.createElement('a');
-    link.href = 'AnshulaAndal_InternshalaResume.pdf';
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-    link.click();
-  });
-}
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+  if (!header) return;
+  header.classList.toggle('scrolled', window.scrollY > 20);
+});
